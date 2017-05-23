@@ -1,0 +1,16 @@
+#配置使用的环境
+spring:
+  profiles:
+    active: dev
+#
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dbgirl?autoReconnect=true&useSSL=false
+    username: root
+    password: 8686886
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
