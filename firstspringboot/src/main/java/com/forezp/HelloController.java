@@ -36,4 +36,6 @@ public class HelloController {
 //        return cupSize+age+content;
         return girlProperties.getCupSize();
     }
+
+
 }

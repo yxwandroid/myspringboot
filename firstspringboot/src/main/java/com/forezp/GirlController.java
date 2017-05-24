@@ -1,5 +1,6 @@
 package com.forezp;
 
+import com.sun.org.apache.regexp.internal.RE;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -76,5 +77,13 @@ public class GirlController {
     @RequestMapping(value = "girls/age/{age}",method = RequestMethod.GET)
     public List<Girl> getGirls(@PathVariable("age") Integer age){
         return girlRep.findByAge(age);
+    }
+
+
+
+
+    @RequestMapping(value = "girlinfo",method =RequestMethod.GET)
+    public String getgirlInfo(){
+        return "hello girl";
     }
 }
